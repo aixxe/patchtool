@@ -1,0 +1,975 @@
+{
+  "info": {
+    "title": "beatmania IIDX 30 RESIDENT",
+    "version": 30,
+    "datecode": "2023090500-LDJ-012",
+    "file": "bm2dx.dll",
+    "md5": "02f2a35ccc390dba01e0b8a0f3dfd7c2",
+    "sha1": "87f1fcb2ef808087fe265ec7426791f030722e96",
+    "sp2xFingerprint": "LDJ-64ef1153_777dc0",
+    "mempatcherValidate": [
+      "bm2dx.dll 190 - C07D7700",
+      "bm2dx.dll 170 - 5311EF64"
+    ]
+  },
+  "data": {
+    "Standard/Menu Timer Freeze": {
+      "comment": false,
+      "tooltip": null,
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x5ACA77",
+          "rva": "0x5AD677",
+          "off": "0F84",
+          "on": "90E9"
+        }
+      ]
+    },
+    "Premium Free Timer Freeze": {
+      "comment": false,
+      "tooltip": null,
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x4F7333",
+          "rva": "0x4F7F33",
+          "off": "74",
+          "on": "EB"
+        }
+      ]
+    },
+    "Allow 1-99m Premium Free Length": {
+      "comment": false,
+      "tooltip": null,
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x372A4E",
+          "rva": "0x37364E",
+          "off": "06",
+          "on": "01"
+        },
+        {
+          "offset": "0x372A5B",
+          "rva": "0x37365B",
+          "off": "19",
+          "on": "63"
+        },
+        {
+          "offset": "0x36EBC2",
+          "rva": "0x36F7C2",
+          "off": "84C0",
+          "on": "9090"
+        }
+      ]
+    },
+    "Hide Time Limit Display on Results Screen": {
+      "comment": false,
+      "tooltip": null,
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x564B73",
+          "rva": "0x565773",
+          "off": "74",
+          "on": "EB"
+        }
+      ]
+    },
+    "Hide Background Color Banners on Song List": {
+      "comment": false,
+      "tooltip": null,
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x8BF6F5",
+          "rva": "0x8C0CF5",
+          "off": "5F",
+          "on": "00"
+        },
+        {
+          "offset": "0x8BF705",
+          "rva": "0x8C0D05",
+          "off": "5F",
+          "on": "00"
+        }
+      ]
+    },
+    "Cursor Lock": {
+      "comment": false,
+      "tooltip": null,
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x53AEA1",
+          "rva": "0x53BAA1",
+          "off": "741F",
+          "on": "9090"
+        }
+      ]
+    },
+    "Unlock All Songs and Charts": {
+      "comment": false,
+      "tooltip": null,
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x4F11EA",
+          "rva": "0x4F1DEA",
+          "off": "32C0",
+          "on": "B001"
+        }
+      ]
+    },
+    "CS-style Song Start Delay": {
+      "comment": false,
+      "tooltip": "Holding Start will pause the song at the beginning until you release it",
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x55BB67",
+          "rva": "0x55C767",
+          "off": "7D36",
+          "on": "9090"
+        }
+      ]
+    },
+    "Enable 1P Premium Free": {
+      "comment": false,
+      "tooltip": null,
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x536FFE",
+          "rva": "0x537BFE",
+          "off": "75",
+          "on": "EB"
+        }
+      ]
+    },
+    "Enable 2P Premium Free": {
+      "comment": false,
+      "tooltip": null,
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x5371CC",
+          "rva": "0x537DCC",
+          "off": "741B",
+          "on": "9090"
+        },
+        {
+          "offset": "0x5371E2",
+          "rva": "0x537DE2",
+          "off": "7405",
+          "on": "9090"
+        }
+      ]
+    },
+    "Force Max V-Discs": {
+      "comment": false,
+      "tooltip": "Infinite LEGGENDARIA plays in Premium Free",
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x37F623",
+          "rva": "0x380223",
+          "off": "0F84",
+          "on": "90E9"
+        }
+      ]
+    },
+    "All Notes Preview 12s": {
+      "comment": false,
+      "tooltip": null,
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x5506ED",
+          "rva": "0x5512ED",
+          "off": "05",
+          "on": "0C"
+        },
+        {
+          "offset": "0x55085B",
+          "rva": "0x55145B",
+          "off": "05",
+          "on": "0C"
+        }
+      ]
+    },
+    "Enable ARENA": {
+      "comment": false,
+      "tooltip": null,
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x537222",
+          "rva": "0x537E22",
+          "off": "7430",
+          "on": "9090"
+        }
+      ]
+    },
+    "Enable BPL BATTLE": {
+      "comment": false,
+      "tooltip": null,
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x537236",
+          "rva": "0x537E36",
+          "off": "741C",
+          "on": "9090"
+        }
+      ]
+    },
+    "ARENA Quick Close": {
+      "comment": false,
+      "tooltip": "As the host of an online ARENA lobby, press VEFX+EFFECT to stop searching for players",
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x5A521E",
+          "rva": "0x5A5E1E",
+          "off": "BB01000000",
+          "on": "E935263000"
+        },
+        {
+          "offset": "0x8A7858",
+          "rva": "0x8A8458",
+          "off": "0000000000000000000000000000000000000000",
+          "on": "8B05C0DD0506F7D0A80C750199FFC3E9B7D9CFFF"
+        }
+      ]
+    },
+    "Dark Mode": {
+      "comment": false,
+      "tooltip": null,
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x54F717",
+          "rva": "0x550317",
+          "off": "84C0",
+          "on": "9090"
+        }
+      ]
+    },
+    "Hide Measure Lines": {
+      "comment": false,
+      "tooltip": null,
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x480EF6",
+          "rva": "0x481AF6",
+          "off": "75",
+          "on": "EB"
+        }
+      ]
+    },
+    "Mute Navigator Voices": {
+      "comment": false,
+      "tooltip": null,
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x5BB1FF",
+          "rva": "0x5BBDFF",
+          "off": "750B",
+          "on": "9090"
+        }
+      ]
+    },
+    "Disable Background Movies": {
+      "comment": true,
+      "tooltip": "Disables rendering of movies & overlays during gameplay. May be useful for low-end hardware",
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x597E13",
+          "rva": "0x598A13",
+          "off": "74",
+          "on": "EB"
+        },
+        {
+          "offset": "0x592D60",
+          "rva": "0x593960",
+          "off": "40574883",
+          "on": "488BC1C3"
+        }
+      ]
+    },
+    "Force TDJ Mode": {
+      "comment": false,
+      "tooltip": null,
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x6BA869",
+          "rva": "0x6BB469",
+          "off": "02",
+          "on": "03"
+        }
+      ]
+    },
+    "Bypass Lightning Monitor Error": {
+      "comment": false,
+      "tooltip": null,
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x578A0A",
+          "rva": "0x57960A",
+          "off": "773F",
+          "on": "9090"
+        },
+        {
+          "offset": "0x578A17",
+          "rva": "0x579617",
+          "off": "7732",
+          "on": "9090"
+        }
+      ]
+    },
+    "Force LDJ Software Video Decoder for All Boot Modes": {
+      "comment": false,
+      "tooltip": null,
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x5EAEF1",
+          "rva": "0x5EBAF1",
+          "off": "0F8586000000",
+          "on": "909090909090"
+        }
+      ]
+    },
+    "Show Lightning Model Folder in LDJ": {
+      "comment": false,
+      "tooltip": "This folder is normally exclusive to TDJ mode",
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x4C5A56",
+          "rva": "0x4C6656",
+          "off": "750A",
+          "on": "9090"
+        }
+      ]
+    },
+    "Force Custom Timing and Adapter Mode in LDJ (Experimental)": {
+      "comment": false,
+      "tooltip": "Enable this if the patch below is not default",
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x47D291",
+          "rva": "0x47DE91",
+          "off": "742E",
+          "on": "9090"
+        },
+        {
+          "offset": "0x47D29C",
+          "rva": "0x47DE9C",
+          "off": "7423",
+          "on": "9090"
+        },
+        {
+          "offset": "0x6BABE2",
+          "rva": "0x6BB7E2",
+          "off": "7414",
+          "on": "9090"
+        },
+        {
+          "offset": "0x6BABED",
+          "rva": "0x6BB7ED",
+          "off": "7409",
+          "on": "9090"
+        }
+      ]
+    },
+    "Choose Custom LDJ Timing/Adapter FPS": {
+      "comment": false,
+      "tooltip": null,
+      "type": "union",
+      "default": "C745DB3C000000C745FF01000000488B45D748894503C745D701000000C745DB3C000000",
+      "patches": {
+        "offset": "0x6BA9DB",
+        "rva": "0x6BB5DB",
+        "60 FPS": "C745DB3C000000C745FF01000000488B45D748894503C745D701000000C745DB3C000000",
+        "120 FPS": "C745DB78000000C745FF01000000488B45D748894503C745D701000000C745DB78000000",
+        "144 FPS": "C745DB90000000C745FF01000000488B45D748894503C745D701000000C745DB90000000",
+        "165 FPS": "C745DBA5000000C745FF01000000488B45D748894503C745D701000000C745DBA5000000",
+        "240 FPS": "C745DBF0000000C745FF01000000488B45D748894503C745D701000000C745DBF0000000",
+        "360 FPS": "C745DB68010000C745FF01000000488B45D748894503C745D701000000C745DB68010000"
+      }
+    },
+    "Choose Custom TDJ Timing/Adapter FPS": {
+      "comment": false,
+      "tooltip": null,
+      "type": "union",
+      "default": "C745DB78000000C7451703000000488B45D74889451BC745D701000000C745DB78000000",
+      "patches": {
+        "offset": "0x6BAA15",
+        "rva": "0x6BB615",
+        "60 FPS": "C745DB3C000000C7451703000000488B45D74889451BC745D701000000C745DB3C000000",
+        "120 FPS": "C745DB78000000C7451703000000488B45D74889451BC745D701000000C745DB78000000",
+        "144 FPS": "C745DB90000000C7451703000000488B45D74889451BC745D701000000C745DB90000000",
+        "165 FPS": "C745DBA5000000C7451703000000488B45D74889451BC745D701000000C745DBA5000000",
+        "240 FPS": "C745DBF0000000C7451703000000488B45D74889451BC745D701000000C745DBF0000000",
+        "360 FPS": "C745DB68010000C7451703000000488B45D74889451BC745D701000000C745DB68010000"
+      }
+    },
+    "Choose Fullscreen Monitor Check FPS Target": {
+      "comment": false,
+      "tooltip": "Match with the two patches above if >120",
+      "type": "union",
+      "default": "3C00",
+      "patches": {
+        "offset": "0x57F20D",
+        "rva": "0x57FE0D",
+        "60 FPS": "3C00",
+        "120 FPS": "7800",
+        "144 FPS": "9000",
+        "165 FPS": "A500",
+        "240 FPS": "F000",
+        "360 FPS": "6801"
+      }
+    },
+    "Skip Monitor Check": {
+      "comment": false,
+      "tooltip": null,
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x5789E3",
+          "rva": "0x5795E3",
+          "off": "8C",
+          "on": "8D"
+        }
+      ]
+    },
+    "Choose Skip Monitor Check FPS": {
+      "comment": false,
+      "tooltip": null,
+      "type": "union",
+      "default": "448B91480B0000448BCA4C8BD94181C267010000",
+      "patches": {
+        "offset": "0x58BF00",
+        "rva": "0x58CB00",
+        "Default": "448B91480B0000448BCA4C8BD94181C267010000",
+        "60 FPS": "48B80000000000004E4066480F6EC0F20F58C8C3",
+        "120 FPS": "48B80000000000005E4066480F6EC0F20F58C8C3",
+        "144 FPS": "48B8000000000000624066480F6EC0F20F58C8C3",
+        "165 FPS": "48B80000000000A0644066480F6EC0F20F58C8C3",
+        "240 FPS": "48B80000000000006E4066480F6EC0F20F58C8C3",
+        "360 FPS": "48B8000000000080764066480F6EC0F20F58C8C3"
+      }
+    },
+    "Skip Decide Screen": {
+      "comment": false,
+      "tooltip": "Immediately loads into chart after selection.",
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x399400",
+          "rva": "0x39A000",
+          "off": "48895C24",
+          "on": "488BC1C3"
+        }
+      ]
+    },
+    "Quick Retry": {
+      "comment": false,
+      "tooltip": null,
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x4CA270",
+          "rva": "0x4CAE70",
+          "off": "40534883EC20",
+          "on": "B001C3909090"
+        }
+      ]
+    },
+    "Quicker Quick Retry": {
+      "comment": false,
+      "tooltip": null,
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x55B035",
+          "rva": "0x55BC35",
+          "off": "7C12",
+          "on": "9090"
+        }
+      ]
+    },
+    "Disable News Sound": {
+      "comment": false,
+      "tooltip": "Disables the sound played when news banners appear.",
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x92ABE8",
+          "rva": "0x92C1E8",
+          "off": "73797373645F6E6577735F637574696E5F7365",
+          "on": "73797373645F64756D6D790000000000000000"
+        }
+      ]
+    },
+    "QWERTY Keyboard Layout for Song Search": {
+      "comment": false,
+      "tooltip": "Changes the touch keyboard layout from alphabetical to QWERTY in song and artist search menu (TDJ only)",
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x8D3F5A",
+          "rva": "0x8D555A",
+          "off": "4142434445464748494A4B4C4D4E4F505152535455565758595A2D",
+          "on": "51574552545955494F504153444647484A4B4C2D5A584356424E4D"
+        }
+      ]
+    },
+    "WASAPI Shared Mode (with 44100Hz)": {
+      "comment": false,
+      "tooltip": null,
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x2CF4C5",
+          "rva": "0x2D00C5",
+          "off": "458BF0",
+          "on": "4D31F6"
+        }
+      ]
+    },
+    "Increase Game Volume": {
+      "comment": false,
+      "tooltip": null,
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x6DC250",
+          "rva": "0x6DCE50",
+          "off": "FF9098000000",
+          "on": "909090909090"
+        }
+      ]
+    },
+    "SSE4.2 Fix": {
+      "comment": false,
+      "tooltip": null,
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x2CF3E4",
+          "rva": "0x2CFFE4",
+          "off": "F3450F",
+          "on": "909090"
+        }
+      ]
+    },
+    "Skip CAMERA DEVICE ERROR Prompt": {
+      "comment": false,
+      "tooltip": null,
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x583DFB",
+          "rva": "0x5849FB",
+          "off": "84",
+          "on": "81"
+        }
+      ]
+    },
+    "Hide Judge Combo Count": {
+      "comment": false,
+      "tooltip": null,
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x5B9772",
+          "rva": "0x5BA372",
+          "off": "FFC0",
+          "on": "31C0"
+        }
+      ]
+    },
+    "Unscramble Touch Screen Keypad in TDJ": {
+      "comment": false,
+      "tooltip": null,
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x64D205",
+          "rva": "0x64DE05",
+          "off": "4D03C849F7F1",
+          "on": "BA0C00000090"
+        }
+      ]
+    },
+    "Debug Mode": {
+      "comment": false,
+      "tooltip": "While in game, press F1 to enable menu. (Disables Profile/Score saving)",
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x584D00",
+          "rva": "0x585900",
+          "off": "32C0",
+          "on": "B001"
+        }
+      ]
+    },
+    "Hide All Bottom Text": {
+      "comment": false,
+      "tooltip": "Except for FREE PLAY",
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x8B46D0",
+          "rva": "0x8B5CD0",
+          "off": "4352454449543A20256420434F494E3A202564202F20256400000000000000004352454449543A202564000000000000504153454C493A204E4F5420415641494C41424C45000000455854524120504153454C493A2025640000000000000000455854524120504153454C493A2025730000000000000000504153454C493A202564000000000000504153454C493A202573000000000000504153454C493A202A2A2A2A2A2A0000202B202564000000202B202573000000504153454C493A204E4F204143434F554E54000000000000494E5345525420434F494E5B535D0000504153454C493A202A2A2A2A2A2A202B20303030303000004352454449543A20393920434F494E3A203939202F203130",
+          "on": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ]
+    },
+    "Reroute FREE PLAY Text": {
+      "comment": false,
+      "tooltip": null,
+      "type": "union",
+      "default": "1D7E5300",
+      "patches": {
+        "offset": "0x37D29F",
+        "rva": "0x37DE9F",
+        "Default": "1D7E5300",
+        "Song Title/Ticker information": "690B5706",
+        "Hide": "912D6100"
+      }
+    },
+    "Reroute PASELI: ****** Text To Song Title/Ticker Information": {
+      "comment": false,
+      "tooltip": null,
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x37D3DD",
+          "rva": "0x37DFDD",
+          "off": "877D5300",
+          "on": "2B0A5706"
+        }
+      ]
+    },
+    "Increase 'All Factory Settings' Buffer": {
+      "comment": false,
+      "tooltip": "Enable this if the option below is not default",
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x5B264E",
+          "rva": "0x5B324E",
+          "off": "58010000",
+          "on": "22611400"
+        },
+        {
+          "offset": "0x85814A",
+          "rva": "0x858D4A",
+          "off": "58010000",
+          "on": "22611400"
+        }
+      ]
+    },
+    "Reroute 'All Factory Settings' Test Menu": {
+      "comment": false,
+      "tooltip": null,
+      "type": "union",
+      "default": "37820100",
+      "patches": {
+        "offset": "0x5B2665",
+        "rva": "0x5B3265",
+        "Default": "37820100",
+        "AfpViewerScene": "17FEEDFF",
+        "QproViewerScene": "6795EEFF",
+        "SoundViewerScene": "170DEFFF",
+        "CustomizeViewerScene": "A723EEFF",
+        "SoundRankingViewerScene": "D7C6EEFF",
+        "SystemSoundViewerScene": "D754EFFF"
+      }
+    },
+    "Omnimix": {
+      "comment": false,
+      "tooltip": null,
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x4C45AD",
+          "rva": "0x4C51AD",
+          "off": "E83E180300",
+          "on": "B801000000"
+        },
+        {
+          "offset": "0x595A10",
+          "rva": "0x596610",
+          "off": "7473",
+          "on": "EB30"
+        },
+        {
+          "offset": "0x595A45",
+          "rva": "0x596645",
+          "off": "41",
+          "on": "58"
+        },
+        {
+          "offset": "0x5980DF",
+          "rva": "0x598CDF",
+          "off": "74",
+          "on": "EB"
+        },
+        {
+          "offset": "0x5973D4",
+          "rva": "0x597FD4",
+          "off": "7540",
+          "on": "9090"
+        },
+        {
+          "offset": "0x5980F6",
+          "rva": "0x598CF6",
+          "off": "7F19",
+          "on": "9090"
+        },
+        {
+          "offset": "0x8DA677",
+          "rva": "0x8DBC77",
+          "off": "61",
+          "on": "6F"
+        },
+        {
+          "offset": "0x989E03",
+          "rva": "0x98B403",
+          "off": "64617461",
+          "on": "6F6D6E69"
+        }
+      ]
+    },
+    "Enable Override Music Select BGM": {
+      "comment": false,
+      "tooltip": null,
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x539D78",
+          "rva": "0x53A978",
+          "off": "7428",
+          "on": "9090"
+        },
+        {
+          "offset": "0x53B2D0",
+          "rva": "0x53BED0",
+          "off": "7422",
+          "on": "9090"
+        }
+      ]
+    },
+    "Set Override Music Select BGM": {
+      "comment": false,
+      "tooltip": null,
+      "type": "union",
+      "default": "E89A07F9FF",
+      "patches": {
+        "offset": "0x53B2E1",
+        "rva": "0x53BEE1",
+        "Default": "E89A07F9FF",
+        "Step Up - Kindergarten": "B8E0940000",
+        "Step Up - Sea": "B830950000",
+        "Step Up - Company": "B880950000",
+        "Step Up - Graveyard": "B8D0950000",
+        "Step Up - Sewers": "B820960000",
+        "Step Up - Battlefield": "B870960000",
+        "Step Up - Laboratory": "B8C0960000",
+        "Step Up - Fantasy": "B810970000",
+        "Arena": "B830A40000",
+        "BPL Battle": "B8F0AC0000",
+        "RESIDENT PARTY": "B8909E0000",
+        "SECRET LIVE": "B850A70000"
+      }
+    },
+    "Set Override Music Select Decide BGM": {
+      "comment": false,
+      "tooltip": null,
+      "type": "union",
+      "default": "E885F6F8FF",
+      "patches": {
+        "offset": "0x53C3A6",
+        "rva": "0x53CFA6",
+        "Default": "E885F6F8FF",
+        "Standard": "B890260000",
+        "Arena": "B880A40000",
+        "BPL Battle": "B840AD0000",
+        "SECRET LIVE": "B8A0A70000"
+      }
+    },
+    "Set Mode Select Default": {
+      "comment": false,
+      "tooltip": null,
+      "type": "union",
+      "default": "05",
+      "patches": {
+        "offset": "0x537270",
+        "rva": "0x537E70",
+        "Standard": "00",
+        "Free": "01",
+        "Class": "03",
+        "Step Up": "05",
+        "Premium Free": "06",
+        "Arena": "07",
+        "BPL Battle": "08"
+      }
+    },
+    "Auto Play": {
+      "comment": false,
+      "tooltip": null,
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x4AE0B9",
+          "rva": "0x4AECB9",
+          "off": "00",
+          "on": "01"
+        }
+      ]
+    },
+    "Remove Camera Boot Delay": {
+      "comment": false,
+      "tooltip": "Skips some fixed delays around camera checks. Significantly speeds up game booting",
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x582DC1",
+          "rva": "0x5839C1",
+          "off": "5802",
+          "on": "0100"
+        },
+        {
+          "offset": "0x6CBFA1",
+          "rva": "0x6CCBA1",
+          "off": "E803",
+          "on": "0100"
+        }
+      ]
+    },
+    "Force Enable Dummy Cameras": {
+      "comment": false,
+      "tooltip": "Use this if you still get camera device errors during boot up when using -iidxdisablecams",
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x6D8B46",
+          "rva": "0x6D9746",
+          "off": "74",
+          "on": "EB"
+        },
+        {
+          "offset": "0x6D8C18",
+          "rva": "0x6D9818",
+          "off": "74",
+          "on": "EB"
+        }
+      ]
+    },
+    "Stock LDJ 120Hz Light Speed": {
+      "comment": false,
+      "tooltip": "Halves most light rates to stock-like behaviour. Should be used along with LDJ 120Hz edits",
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x549485",
+          "rva": "0x54A085",
+          "off": "78",
+          "on": "F0"
+        },
+        {
+          "offset": "0x55A129",
+          "rva": "0x55AD29",
+          "off": "78",
+          "on": "F0"
+        },
+        {
+          "offset": "0x54947D",
+          "rva": "0x54A07D",
+          "off": "6F",
+          "on": "6D"
+        },
+        {
+          "offset": "0x342FEE",
+          "rva": "0x343BEE",
+          "off": "CCCC",
+          "on": "D1F9"
+        },
+        {
+          "offset": "0x5B5B5E",
+          "rva": "0x5B675E",
+          "off": "8B0DA0823306",
+          "on": "B92000000090"
+        },
+        {
+          "offset": "0x5498D2",
+          "rva": "0x54A4D2",
+          "off": "6A",
+          "on": "67"
+        },
+        {
+          "offset": "0x54943D",
+          "rva": "0x54A03D",
+          "off": "CCCCCC",
+          "on": "8B713C"
+        },
+        {
+          "offset": "0x5494A1",
+          "rva": "0x54A0A1",
+          "off": "8B4B3C",
+          "on": "D1FE90"
+        },
+        {
+          "offset": "0x5494AA",
+          "rva": "0x54A0AA",
+          "off": "E903D1",
+          "on": "EE01F2"
+        },
+        {
+          "offset": "0x5494BA",
+          "rva": "0x54A0BA",
+          "off": "2BC8",
+          "on": "29C6"
+        },
+        {
+          "offset": "0x5494BD",
+          "rva": "0x54A0BD",
+          "off": "F9",
+          "on": "FE"
+        },
+        {
+          "offset": "0x5B6B97",
+          "rva": "0x5B7797",
+          "off": "CCCCCCCCCCCCCCCCCC",
+          "on": "448B491841D1F9EB10"
+        },
+        {
+          "offset": "0x5B6BCD",
+          "rva": "0x5B77CD",
+          "off": "448B4318",
+          "on": "458BC190"
+        },
+        {
+          "offset": "0x5B6E3A",
+          "rva": "0x5B7A3A",
+          "off": "72",
+          "on": "59"
+        }
+      ]
+    }
+  }
+}

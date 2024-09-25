@@ -1,0 +1,66 @@
+${INPUT_FILENAME}.mph:
+  - "Standard/Menu Timer Freeze": on
+  - "Premium Free Timer Freeze": on
+  - "Allow 1-99m Premium Free Length": on
+# - "Hide Time Limit Display on Results Screen": on
+# - "Hide Background Color Banners on Song List": on
+  - "Cursor Lock": on
+  - "Unlock All Songs and Charts": on
+  - "CS-style Song Start Delay": on
+  - "Enable 1P Premium Free": on
+  - "Enable 2P Premium Free": on
+  - "Force Max V-Discs": on
+# - "All Notes Preview 12s": on
+  - "Enable ARENA": on
+  - "Enable BPL BATTLE": on
+# - "ARENA Quick Close": on
+# - "Dark Mode": on
+# - "Hide Measure Lines": on
+  - "Mute Navigator Voices": on
+# - "Disable Background Movies": on
+# - "Force LDJ Software Video Decoder for All Boot Modes": on
+  - "Skip Monitor Check": on
+  - "Skip Decide Screen": on
+  - "Quick Retry": on
+  - "Quicker Quick Retry": on
+# - "Disable News Sound": on
+# - "WASAPI Shared Mode (with 44100Hz)": on
+# - "Increase Game Volume": on
+# - "SSE4.2 Fix": on
+# - "Skip CAMERA DEVICE ERROR Prompt": on
+# - "Debug Mode": on
+  - "Hide All Bottom Text": on
+  - "Reroute FREE PLAY Text": "Hide" # Default, Song Title/Ticker information, Hide
+# - "Reroute PASELI: ****** Text To Song Title/Ticker Information": on
+  - "Increase 'All Factory Settings' Buffer": on
+  - "Reroute 'All Factory Settings' Test Menu": "SystemSoundViewerScene" # Default, AfpViewerScene, QproViewerScene, SoundViewerScene, CustomizeViewerScene, SoundRankingViewerScene, SystemSoundViewerScene
+# - "Enable Override Music Select BGM": on
+# - "Set Override Music Select BGM": "Default" # Default, Step Up - Kindergarten, Step Up - Sea, Step Up - Company, Step Up - Graveyard, Step Up - Sewers, Step Up - Battlefield, Step Up - Laboratory, Step Up - Fantasy, Arena, BPL Battle, RESIDENT PARTY, SECRET LIVE
+# - "Set Override Music Select Decide BGM": "Default" # Default, Standard, Arena, BPL Battle, SECRET LIVE
+  - "Set Mode Select Default": "Premium Free" # Standard, Free, Class, Step Up, Premium Free, Arena, BPL Battle
+# - "Auto Play": on
+  - "Remove Camera Boot Delay": on
+# - "Force Enable Dummy Cameras": on
+
+${INPUT_FILENAME}-LDJ.mph:
+  - "Force LDJ Mode": on
+  - "Show Lightning Model Folder in LDJ": on
+  - "Force Custom Timing and Adapter Mode in LDJ (Experimental)": on
+  - "Choose Custom LDJ Timing/Adapter FPS": "120 FPS" # 60 FPS, 120 FPS, 144 FPS, 165 FPS, 240 FPS, 360 FPS
+  - "Choose Fullscreen Monitor Check FPS Target": "120 FPS" # 60 FPS, 120 FPS, 144 FPS, 165 FPS, 240 FPS, 360 FPS
+  - "Choose Skip Monitor Check FPS": "120 FPS" # Default, 60 FPS, 120 FPS, 144 FPS, 165 FPS, 240 FPS, 360 FPS
+# - "Stock LDJ 120Hz Light Speed": on
+
+${INPUT_FILENAME}-TDJ.mph:
+  - "Force TDJ Mode": on
+# - "Bypass Lightning Monitor Error": on
+# - "Choose Custom TDJ Timing/Adapter FPS": "120 FPS" # 60 FPS, 120 FPS, 144 FPS, 165 FPS, 240 FPS, 360 FPS
+# - "Choose Fullscreen Monitor Check FPS Target": "120 FPS" # 60 FPS, 120 FPS, 144 FPS, 165 FPS, 240 FPS, 360 FPS
+  - "Choose Skip Monitor Check FPS": "120 FPS" # Default, 60 FPS, 120 FPS, 144 FPS, 165 FPS, 240 FPS, 360 FPS
+  - "QWERTY Keyboard Layout for Song Search": on
+  - "Unscramble Touch Screen Keypad in TDJ": on
+  - "Disable Recording Lock": on
+# - "Disable Premium Area Functions Server Region Check": on
+
+${INPUT_FILENAME}-omnimix.mph:
+  - "Omnimix": on
