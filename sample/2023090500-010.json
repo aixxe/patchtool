@@ -8,8 +8,8 @@
     "sha1": "cf9e43352a00e822ec9cdcf24cb2a3365486684b",
     "sp2xFingerprint": "LDJ-64ef0ec9_844b10",
     "mempatcherValidate": [
-      "bm2dx.dll 1A8 - 104B8400",
-      "bm2dx.dll 188 - C90EEF64"
+      "bm2dx.dll F+1A8 - 104B8400",
+      "bm2dx.dll F+188 - C90EEF64"
     ]
   },
   "data": {
@@ -573,6 +573,39 @@
         }
       ]
     },
+    "Force Monitor Adjust Offset": {
+      "comment": false,
+      "tooltip": "Enable to force using the below patch, otherwise 0 is used.",
+      "type": "default",
+      "patches": [
+        {
+          "offset": "0x65AEA2",
+          "rva": "0x65BAA2",
+          "off": "7426",
+          "on": "EB0B"
+        },
+        {
+          "offset": "0x65AEC3",
+          "rva": "0x65BAC3",
+          "off": "08",
+          "on": "21"
+        }
+      ]
+    },
+    "Monitor Adjust Offset": {
+      "default": 10,
+      "comment": false,
+      "tooltip": "Every +1 Adjust is -0.10 offset. Use -28 to make LDJ mode behave like TDJ mode default.",
+      "type": "number",
+      "patches": {
+        "offset": "0xA57CE8",
+        "rva": "0xA596E8",
+        "size": 4,
+        "min": -1000,
+        "max": 1000,
+        "off": "0A000000"
+      }
+    },
     "Skip CAMERA DEVICE ERROR Prompt": {
       "comment": false,
       "tooltip": null,
@@ -739,6 +772,12 @@
           "offset": "0x665106",
           "rva": "0x665D06",
           "off": "7F19",
+          "on": "9090"
+        },
+        {
+          "offset": "0x591854",
+          "rva": "0x592454",
+          "off": "7425",
           "on": "9090"
         },
         {
