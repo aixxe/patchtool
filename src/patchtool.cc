@@ -36,9 +36,35 @@ struct union_patch
     std::vector<union_option> options;
 };
 
+struct number_patch
+{
+    std::string rva;
+    std::string off;
+    std::int32_t min;
+    std::int32_t max;
+    std::uint32_t size;
+
+    [[nodiscard]] auto encode(auto value) const -> std::string
+    {
+        auto constexpr hex = "0123456789ABCDEF";
+
+        auto result = std::string {};
+        result.reserve(size * 2);
+
+        for (auto i = 0; i < size; ++i)
+        {
+            auto const byte = static_cast<std::uint8_t>(value >> 8 * i & 0xFF);
+            result.push_back(hex[byte >> 4]);
+            result.push_back(hex[byte & 0x0F]);
+        }
+
+        return result;
+    }
+};
+
 struct container_t
 {
-    using patch_t = std::variant<default_patch, union_patch>;
+    using patch_t = std::variant<default_patch, union_patch, number_patch>;
     using patch_store_t = std::unordered_map<std::string, patch_t>;
 
     std::string file;
@@ -161,7 +187,7 @@ auto parse_metadata(const opts_t& options)
                 result.patches.emplace_back(rva, on, off);
             }
 
-            container.patches.emplace(name, result);
+            container.patches[name] = std::move(result);
         }
         else if (type == "union"sv)
         {
@@ -178,7 +204,20 @@ auto parse_metadata(const opts_t& options)
                 result.options.emplace_back(option.GetString(), bytes.GetString());
             }
 
-            container.patches.emplace(name, result);
+            container.patches[name] = std::move(result);
+        }
+        else if (type == "number"sv)
+        {
+            auto result = number_patch
+            {
+                .rva = parse_address(value["patches"]["rva"].GetString()),
+                .off = value["patches"]["off"].GetString(),
+                .min = value["patches"]["min"].GetInt(),
+                .max = value["patches"]["max"].GetInt(),
+                .size = value["patches"]["size"].GetUint(),
+            };
+
+            container.patches[name] = std::move(result);
         }
     }
 
@@ -292,6 +331,14 @@ auto main(int argc, char* argv[]) -> int try
                                + std::format("{} {} {}", container.file, i.rva, item.bytes)
                                + (opts->no_verify ? "": std::format(" {}", i.off)) + "\n";
                     }
+                }
+                else if constexpr (std::is_same_v<T, number_patch>)
+                {
+                    auto number = std::stoll(value);
+                    if (number < i.min || number > i.max)
+                        throw std::runtime_error { "number patch value out of range" };
+                    buffer += std::format("{} {} {}", container.file, i.rva, i.encode(number))
+                           + (opts->no_verify ? "": std::format(" {}", i.off)) + "\n";
                 }
             }, patch->second);
         }
